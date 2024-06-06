@@ -1,0 +1,182 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 2rem;
+}
+
+img {
+    height: 230px;
+    border: none;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.intro {
+    height: 35vh;
+    background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+    color: #fff;
+    margin-bottom: 2rem;
+
+
+}
+
+.intro h1 {
+    padding-top: 3.5rem;
+}
+
+.intro2 {
+    position: relative;
+    color: aliceblue;
+    overflow: hidden;
+    font-size: 30px;
+}
+
+/* .intro2 .text.first-text {
+    color: aliceblue;
+}
+
+.text.second-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #4070F4;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+} */
+
+
+.intro2 .text.first-text {
+    color: aliceblue;
+}
+
+.text.second-text {
+    position: relative;
+}
+
+.text.second-text::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-right: 2px solid #4070F4;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #4070F4;
+    }
+}
+
+
+
+.Copyright {
+    height: 5vh;
+    background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+    color: #fff;
+}
+
+.contact {
+    margin-bottom: 1rem;
+}
+
+
+.icon {
+    margin: 5px;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.icon1 {
+    background-color: #0077B5;
+}
+
+.icon2 {
+    background-color: #2b3137;
+}
+
+.about p {
+    margin: 20px 23.438rem;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .about p {
+        margin: 20px 2.438rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .about p {
+        margin: 20px 2.438rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .about p {
+        margin: 20px 5.438rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .about p {
+        margin: 20px 12.438rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .about p {
+        margin: 20px 23.438rem;
+    }
+}
