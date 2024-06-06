@@ -23,7 +23,7 @@ hr {
 }
 
 .intro {
-    height: 35vh;
+    height: 25vh;
     background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
     color: #fff;
     margin-bottom: 2rem;
