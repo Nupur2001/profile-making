@@ -9,18 +9,16 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <div class="intro">
-        <h1>Welcome to my profile</h1>
-        <!-- <p>This is Nupur Sikka, a Full Stack Web Developer</p> -->
 
-        <div class="intro2">
-            <span class="text first-text">I'm a</span>
-            <span class="text second-text">Full Stack Web Developer</span>
-            <!-- <span class="text third-text">Flutter Developer</span>
-            <span class="text fourth-text">Freelancer</span> -->
+    <button class="toggleBtn" id="toggleBtn"><i class="fa fa-moon"></i> Dark Mode</button>
+    <div class="intro">
+        
+        <h1>This is Nupur, a <span class="typingText"></span></h1>
+        <h2>Welcome to my profile</h2>
         </div>
 
 
@@ -37,26 +35,47 @@
     </div>
 
 
-    <hr>
+    <!-- <hr> -->
 
     <div class="skills">
         <h2>Skills</h2>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>JavaScript</p>
-        <p>Python</p>
-        <p>Front End Web Development</p>
+        <div class="skill">
+            <p class="skillset">Web Development</p>
+            <p class="skillset">App Development using Flutter</p>
+            <p class="skillset">Graphic Designing</p>
+        </div>
+        
     </div>
 
     <hr>
 
+    <div class="programmingLangs">
+        <p>Python</p>
+        <p>JavaScript</p>
+        <p>Dart</p>
+        <p>C programming</p>
+    </div>
+
     <div class="contact">
         <h2>Contact Information</h2>
         <p>Let's connect</p>
-        <a href="https://www.linkedin.com/in/nupur-sikka-1740881b2/"><i
+
+        <div class="container">
+            <form action="">
+                <input type="text"  placeholder="Enter your name please">
+                <input type="email"  placeholder="Enter your email please">
+                <textarea placeholder="Enter your message..."></textarea>
+                <a href="" type="button" class="Btn">Submit</a>
+            </form>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/nupur-sikka-1740881b2/"><i
                 class=" icon icon1 fa-brands fa-linkedin-in"></i></a>
 
         <a href="https://github.com/Nupur2001"><i class="icon icon2 fa-brands fa-github"></i></a>
+        </div>
+        
 
 
     </div>
@@ -64,7 +83,7 @@
     <!-- <hr> -->
     <p class="Copyright">© Copyright Nupur Sikka 2024</p>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 
 
 
