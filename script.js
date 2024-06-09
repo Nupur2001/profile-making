@@ -49,7 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const body = document.body;
     const intro = document.querySelector('.intro');
     const copyright = document.querySelector('.Copyright');
-    const SubmitBtn=document.querySelector('.Btn')
+    const submitBtn = document.querySelector('.Btn');
+    const actionBtns = document.querySelectorAll('.actionBtn');
+    const skillSets = document.querySelectorAll('.skillset');
 
     darkModeToggle.addEventListener('click', () => {
         const currentMode = body.classList.toggle('dark-mode') ? 'Dark' : 'Light';
@@ -61,17 +63,32 @@ document.addEventListener('DOMContentLoaded', function () {
             intro.style.background = 'linear-gradient(to right, #cc2b5e 0%, #753a88 100%)';
             copyright.style.background = 'linear-gradient(to right, #cc2b5e 0%, #753a88 100%)';
             darkModeToggle.style.background = 'linear-gradient(to right, #cc2b5e 0%, #753a88 100%)';
-            SubmitBtn.style.background = 'linear-gradient(to right, #cc2b5e 0%, #753a88 100%)';
+            submitBtn.style.background = 'linear-gradient(to right, #cc2b5e 0%, #753a88 100%)';
+
+            actionBtns.forEach(actionBtn => {
+                actionBtn.style.background = 'linear-gradient(to right, #cc2b5e 0%, #753a88 100%)';
+            });
+
+            skillSets.forEach(skillSet => {
+                skillSet.style.color = 'white';
+            });
+
             darkModeToggle.addEventListener('mouseover', () => {
                 darkModeToggle.style.background = 'linear-gradient(to right, #cc2b5e 0%, #753a88 100%)';
-            })
-
-
+            });
         } else {
             intro.style.background = 'linear-gradient(to right, #33ccff 0%, #ff99cc 100%)';
             copyright.style.background = 'linear-gradient(to right, #33ccff 0%, #ff99cc 100%)';
             darkModeToggle.style.background = 'linear-gradient(to right, #33ccff 0%, #ff99cc 100%)';
-            SubmitBtn.style.background = 'linear-gradient(to right, #33ccff 0%, #ff99cc 100%)';
+            submitBtn.style.background = 'linear-gradient(to right, #33ccff 0%, #ff99cc 100%)';
+
+            actionBtns.forEach(actionBtn => {
+                actionBtn.style.background = 'linear-gradient(to right, #33ccff 0%, #ff99cc 100%)';
+            });
+
+            skillSets.forEach(skillSet => {
+                skillSet.style.color = 'black';
+            });
         }
     });
 });
@@ -79,5 +96,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
 // changeAboutMeText function call
 changeAboutMeText();
+
+
+// document.addEventListener('DOMContentLoaded',function(){
+//     const observer = new IntersectionObserver(entries=>{
+//         entries.forEach(entry=>{
+//             if(entry.isIntersecting){
+//                 const progressBar=entry.target.querySelector('.progress-bar');
+//                 const progress=progressBar.dataset.progress;
+//                 progressBar.style.setProperty('--progress',`${progress}%`)
+//                 progressBar.classList.add('animated');
+//                 observer.unobserve(entry.target)
+//             }
+//         });
+//         const programmingLanguages=document.querySelectorAll('#programmingLanguages .lang');
+//         programmingLanguages.forEach(lang=>{
+//             observer.observe(lang)
+//         })
+//     });
+// });
