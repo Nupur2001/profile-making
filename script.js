@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const intro = document.querySelector('.intro');
     const copyright = document.querySelector('.Copyright');
     const submitBtn = document.querySelector('.Btn');
+    const downloadBtn = document.querySelector('.downloadBtn');
     const actionBtns = document.querySelectorAll('.actionBtn');
     const skillSets = document.querySelectorAll('.skillset');
 
@@ -64,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
             copyright.style.background = 'linear-gradient(to right, #cc2b5e 0%, #753a88 100%)';
             darkModeToggle.style.background = 'linear-gradient(to right, #cc2b5e 0%, #753a88 100%)';
             submitBtn.style.background = 'linear-gradient(to right, #cc2b5e 0%, #753a88 100%)';
+            downloadBtn.style.background = 'linear-gradient(to right, #cc2b5e 0%, #753a88 100%)';
 
             actionBtns.forEach(actionBtn => {
                 actionBtn.style.background = 'linear-gradient(to right, #cc2b5e 0%, #753a88 100%)';
@@ -81,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
             copyright.style.background = 'linear-gradient(to right, #33ccff 0%, #ff99cc 100%)';
             darkModeToggle.style.background = 'linear-gradient(to right, #33ccff 0%, #ff99cc 100%)';
             submitBtn.style.background = 'linear-gradient(to right, #33ccff 0%, #ff99cc 100%)';
+            downloadBtn.style.background = 'linear-gradient(to right, #33ccff 0%, #ff99cc 100%)';
 
             actionBtns.forEach(actionBtn => {
                 actionBtn.style.background = 'linear-gradient(to right, #33ccff 0%, #ff99cc 100%)';
